@@ -1,0 +1,45 @@
+{
+  "format": "indexed8 per scene",
+  "target_size": [
+    480,
+    270
+  ],
+  "scenes": [
+    {
+      "name": "ACRUX_01_Sleep",
+      "png": "ACRUX_01_Sleep_480x270_256c_indexed8.png",
+      "raw": "ACRUX_01_Sleep_480x270_256c_indexed8.raw",
+      "palette": "ACRUX_01_Sleep_256c_palette.rgb",
+      "qa": "ACRUX_01_Sleep_QA.txt",
+      "used_palette_count": 256,
+      "raw_byte_count": 129600
+    },
+    {
+      "name": "ACRUX_02_SolarCharge",
+      "png": "ACRUX_02_SolarCharge_480x270_256c_indexed8.png",
+      "raw": "ACRUX_02_SolarCharge_480x270_256c_indexed8.raw",
+      "palette": "ACRUX_02_SolarCharge_256c_palette.rgb",
+      "qa": "ACRUX_02_SolarCharge_QA.txt",
+      "used_palette_count": 256,
+      "raw_byte_count": 129600
+    },
+    {
+      "name": "ACRUX_03_Dusk",
+      "png": "ACRUX_03_Dusk_480x270_256c_indexed8.png",
+      "raw": "ACRUX_03_Dusk_480x270_256c_indexed8.raw",
+      "palette": "ACRUX_03_Dusk_256c_palette.rgb",
+      "qa": "ACRUX_03_Dusk_QA.txt",
+      "used_palette_count": 256,
+      "raw_byte_count": 129600
+    },
+    {
+      "name": "ACRUX_04_Ending",
+      "png": "ACRUX_04_Ending_480x270_256c_indexed8.png",
+      "raw": "ACRUX_04_Ending_480x270_256c_indexed8.raw",
+      "palette": "ACRUX_04_Ending_256c_palette.rgb",
+      "qa": "ACRUX_04_Ending_QA.txt",
+      "used_palette_count": 256,
+      "raw_byte_count": 129600
+    }
+  ]
+}

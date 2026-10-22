@@ -1,0 +1,11 @@
+* text=auto
+*.md text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.inc text eol=lf
+*.ps1 text eol=crlf
+*.psm1 text eol=crlf
+*.png binary
+*.rgb binary
+*.raw binary
+*.5bpp binary

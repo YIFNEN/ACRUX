@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "internalLimitBytes": 1350000,
+  "officialLimitBytes": 1474560,
+  "packageFiles": [
+    {
+      "source": "out/game-release-x86/ACRUX.exe",
+      "destination": "ACRUX.exe"
+    }
+  ],
+  "allowedImports": [
+    "KERNEL32.dll",
+    "USER32.dll",
+    "GDI32.dll",
+    "WINMM.dll"
+  ],
+  "forbiddenNetworkImports": [
+    "WINHTTP.dll",
+    "WININET.dll",
+    "WS2_32.dll",
+    "URLMON.dll"
+  ],
+  "assetRoot": "assets/source",
+  "assetLedger": "docs/assets/asset-ledger.csv",
+  "dependencyLedger": "docs/release/dependency-ledger.csv",
+  "candidateRoot": "artifacts/rc"
+}

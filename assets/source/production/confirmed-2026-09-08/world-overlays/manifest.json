@@ -1,0 +1,388 @@
+{
+  "project": "ACRUX",
+  "batch": "world-structure-and-resource-family-production-update",
+  "date": "2026-09-07",
+  "authoritative_old_assets": [
+    {
+      "id": "W05 Base Observatory production sprite",
+      "status": "authoritative; not redrawn or modified"
+    },
+    {
+      "id": "W06 Relay 1 production sprite",
+      "status": "authoritative; supplemented by state overlays only"
+    },
+    {
+      "id": "W06 Relay 2 production sprite",
+      "status": "authoritative; supplemented by state overlays only"
+    },
+    {
+      "id": "W06 Relay 3 production sprite",
+      "status": "authoritative; supplemented by state overlays only"
+    },
+    {
+      "id": "W07 FOOD",
+      "status": "authoritative; no modification included"
+    },
+    {
+      "id": "W07 WATER",
+      "status": "authoritative; no modification included"
+    },
+    {
+      "id": "W07 PATH MATERIAL",
+      "status": "authoritative; no modification included"
+    }
+  ],
+  "new_assets": [
+    {
+      "id": "W05_BaseInteraction_01",
+      "category": "base_overlay",
+      "canvas": [
+        12,
+        10
+      ],
+      "overlay_top_left_in_64x64": [
+        26,
+        31
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        3,
+        4,
+        7,
+        7
+      ],
+      "palette_indices_used": [
+        0,
+        14,
+        15
+      ],
+      "runtime_bytes_5bpp": 75,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only. Subtle terminal/core availability response; warm refuge light intentionally untouched.",
+      "sha256_png": "17b4b7641aaeafa2839baefec60ebb2fc4d0f7340cf100ac47dc4d1ee5ef4005",
+      "sha256_5bpp": "39631f6baa26bbb38cf66790c2c0627a803c8ce6100f9e35cc2b423bd53a3a65",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W05_BaseInteraction_02",
+      "category": "base_overlay",
+      "canvas": [
+        12,
+        10
+      ],
+      "overlay_top_left_in_64x64": [
+        26,
+        31
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        3,
+        3,
+        8,
+        7
+      ],
+      "palette_indices_used": [
+        0,
+        9,
+        14,
+        15
+      ],
+      "runtime_bytes_5bpp": 75,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only. Slightly brighter acknowledgement; no halo, particles, or relay-like activation language.",
+      "sha256_png": "1a1ace3215129a57d11b39c351c9b4898ca8050d6009de36e357dac81f3493fa",
+      "sha256_5bpp": "e2d33694b1c3c1ae235ef3b7632d5d473c89406a41c3c84f0d05d65594316863",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W06_Relay1_Wired",
+      "category": "relay_overlay",
+      "canvas": [
+        12,
+        24
+      ],
+      "overlay_top_left_in_64x64": [
+        26,
+        17
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        5,
+        6,
+        8,
+        16
+      ],
+      "palette_indices_used": [
+        0,
+        14
+      ],
+      "runtime_bytes_5bpp": 180,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only for authoritative Relay 1 body. Wired core/conductor response; Dormant uses no overlay (0 bytes). No baked bloom.",
+      "sha256_png": "1e231b5d9fb722b31cd72f8f5d92702cbabce2c1094d1522b02ec6916020fd95",
+      "sha256_5bpp": "2955737654071ba391c0e72ae6927508963646494b1de2c3ede5f2cc1411ff69",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W06_Relay1_Active",
+      "category": "relay_overlay",
+      "canvas": [
+        12,
+        24
+      ],
+      "overlay_top_left_in_64x64": [
+        26,
+        17
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        4,
+        5,
+        9,
+        18
+      ],
+      "palette_indices_used": [
+        0,
+        9,
+        14,
+        15
+      ],
+      "runtime_bytes_5bpp": 180,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only for authoritative Relay 1 body. Active core/conductor response; Dormant uses no overlay (0 bytes). No baked bloom.",
+      "sha256_png": "b9360a552d7f6ee5743fee84e8034cde6a5c2f1aeaab091bb62a12e7583be5f1",
+      "sha256_5bpp": "663457a7f2584a34ec6b45bfc332a9e02c743b37e3be2c4fc77b1e113e05469c",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W06_Relay2_Wired",
+      "category": "relay_overlay",
+      "canvas": [
+        14,
+        23
+      ],
+      "overlay_top_left_in_64x64": [
+        25,
+        18
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        5,
+        7,
+        8,
+        19
+      ],
+      "palette_indices_used": [
+        0,
+        14
+      ],
+      "runtime_bytes_5bpp": 202,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only for authoritative Relay 2 body. Wired core/conductor response; Dormant uses no overlay (0 bytes). No baked bloom.",
+      "sha256_png": "15512f2a0a096b7fdea2989f311d5bef678d726bc9f1a0e9ee2c03907c35f6ef",
+      "sha256_5bpp": "173d9a24768ede9742ef196132744dbd3a8ff385fb5102e850bc338f0771290c",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W06_Relay2_Active",
+      "category": "relay_overlay",
+      "canvas": [
+        14,
+        23
+      ],
+      "overlay_top_left_in_64x64": [
+        25,
+        18
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        5,
+        6,
+        9,
+        19
+      ],
+      "palette_indices_used": [
+        0,
+        9,
+        14,
+        15
+      ],
+      "runtime_bytes_5bpp": 202,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only for authoritative Relay 2 body. Active core/conductor response; Dormant uses no overlay (0 bytes). No baked bloom.",
+      "sha256_png": "002ada57ed990666b02105c101d6438a7497e0ddd7a0d1af8d7ce3c8b7559f6f",
+      "sha256_5bpp": "66984dce9967fe2e4d72446ecebb11eefc7e36947579759b6b2da62c16fda17e",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W06_Relay3_Wired",
+      "category": "relay_overlay",
+      "canvas": [
+        13,
+        25
+      ],
+      "overlay_top_left_in_64x64": [
+        26,
+        16
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        5,
+        5,
+        8,
+        19
+      ],
+      "palette_indices_used": [
+        0,
+        14
+      ],
+      "runtime_bytes_5bpp": 204,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only for authoritative Relay 3 body. Wired core/conductor response; Dormant uses no overlay (0 bytes). No baked bloom.",
+      "sha256_png": "8c374522207c31fae9117533b200f89c0effa4aaf7f708cb5d6af85d3a298b7e",
+      "sha256_5bpp": "b1031c2fa80324c0a57c30f65709c40f6a1ac0ba17c01fa91fae9f2e7eca04f6",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W06_Relay3_Active",
+      "category": "relay_overlay",
+      "canvas": [
+        13,
+        25
+      ],
+      "overlay_top_left_in_64x64": [
+        26,
+        16
+      ],
+      "authoritative_base_anchor": [
+        32,
+        44
+      ],
+      "local_bbox_nontransparent": [
+        4,
+        4,
+        8,
+        21
+      ],
+      "palette_indices_used": [
+        0,
+        9,
+        14,
+        15
+      ],
+      "runtime_bytes_5bpp": 204,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "Supplement only for authoritative Relay 3 body. Active core/conductor response; Dormant uses no overlay (0 bytes). No baked bloom.",
+      "sha256_png": "1e552c231e0a0a50fd7f3a992c9efaea4aa138464079c5337d69d47cad2df5c4",
+      "sha256_5bpp": "1cd70a6ae88cf1297ca1045746b20fd6368e8875000a5931b52938ef1609cf40",
+      "pack_roundtrip_ok": true
+    },
+    {
+      "id": "W07_PathScrap",
+      "category": "resource",
+      "canvas": [
+        24,
+        24
+      ],
+      "overlay_top_left_in_64x64": null,
+      "authoritative_base_anchor": [
+        12,
+        18
+      ],
+      "local_bbox_nontransparent": [
+        4,
+        8,
+        20,
+        19
+      ],
+      "palette_indices_used": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        12,
+        14
+      ],
+      "runtime_bytes_5bpp": 360,
+      "packing": "5bpp row-major MSB-first; trailing padding bits zero",
+      "notes": "New 24x24 pickup. Three chipped conductor fragments; central fragment preserves an obvious recessed broken circuit and only a faint dim-cyan remnant.",
+      "sha256_png": "f8c6b33c87cd4ebeadf72d1794f65dd3fc77b335e684cf61edef17b30d289f0b",
+      "sha256_5bpp": "7ed1725135fb4bc2f5b5f127c27c47e005f5dc23dfb3f962f82b0b1d2e3a007e",
+      "pack_roundtrip_ok": true
+    }
+  ],
+  "relay_dormant_policy": {
+    "asset": "none",
+    "runtime_bytes": 0,
+    "reason": "Dormant is the authoritative physical Relay sprite with no emitted cyan overlay."
+  },
+  "resource_family_contract": {
+    "FOOD": "canned ration",
+    "WATER": "capped bottle",
+    "PATH MATERIAL": "intact square conductor material",
+    "PATH SCRAP": "broken conductor fragments"
+  },
+  "palette_lock": {
+    "target": "World32",
+    "strategy": "Use only documented indices 0-15, which are a safe subset of the expanded World32 contract; no colors from undocumented 16-31 are emitted.",
+    "indices_used": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      6,
+      9,
+      12,
+      14,
+      15
+    ],
+    "rgb_subset_used": {
+      "0": "#000000",
+      "1": "#070B18",
+      "2": "#11182D",
+      "3": "#1D2742",
+      "4": "#334665",
+      "6": "#747C9A",
+      "9": "#F3F2FA",
+      "12": "#774D45",
+      "14": "#238B9A",
+      "15": "#53E6EA"
+    },
+    "raw_index_0": "transparent"
+  },
+  "packing": {
+    "format": "5bpp",
+    "order": "row-major",
+    "bit_order": "MSB-first",
+    "padding": "zero bits only at end of payload",
+    "total_added_runtime_bytes": 1682
+  },
+  "source_availability_note": {
+    "status": "limitation",
+    "detail": "The current execution environment exposed ACRUX design/usage documents but did not expose the actual W05/W06/W07 production PNG bitmaps. No authoritative old sprite was reconstructed or modified. Overlay offsets are therefore anchored to the documented 64x64 anchor contract and must be pixel-checked against the authoritative bitmaps before integration."
+  }
+}

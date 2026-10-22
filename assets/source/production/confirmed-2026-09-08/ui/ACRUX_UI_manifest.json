@@ -1,0 +1,30 @@
+{
+  "project": "ACRUX",
+  "pass": "UI asset production B-1 through B-4 (final packaged pass with revised B4 critical icons)",
+  "runtime_format": {
+    "packing": "5bpp",
+    "order": "row-major",
+    "bit_order": "MSB-first",
+    "transparent_index": 0,
+    "palette_contract": "Uses only exact ACRUX palette indices 0-15 recoverable from the supplied atlas contract; no inferred RGB values are introduced."
+  },
+  "runtime_files": [
+    "runtime/B1_base_menu_panel.5bpp",
+    "runtime/B1_base_menu_selector.5bpp",
+    "runtime/B2_storage_panel.5bpp",
+    "runtime/B2_storage_row_selector.5bpp",
+    "runtime/B3_context_prompt_chip.5bpp",
+    "runtime/B4_critical_icons_sheet.5bpp",
+    "runtime/B4_food_critical.5bpp",
+    "runtime/B4_water_critical.5bpp"
+  ],
+  "review_only": [
+    "review_only/ACRUX_UI_native_1x_readability_review.png"
+  ],
+  "notes": {
+    "B1_selector": "Overlay at x=0 or x=72 relative to B1 panel.",
+    "B2_selector": "Reusable overlay on either list column; row y origins 26,44,62,80,98.",
+    "B3_prompt_chip": "Reserved for runtime text only; supports strings such as Z TAKE / Z REPAIR / Z BASE / SPACE CHARGE.",
+    "B4_revision": "Updated shortage/critical read using diagonal mauve-red slash overlays while preserving can/bottle silhouette identity."
+  }
+}

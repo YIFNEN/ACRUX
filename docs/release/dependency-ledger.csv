@@ -1,0 +1,4 @@
+kind,name,version,source,license,redistributed,notice_required
+toolchain,MSVC,selected by build script,https://visualstudio.microsoft.com/vs/,Microsoft Software License Terms,false,false
+system-sdk,Windows SDK,selected by build script,https://developer.microsoft.com/windows/downloads/windows-sdk/,Microsoft Software License Terms,false,false
+system-api,WinMM waveOut,Windows system component,Windows SDK / winmm.lib,Microsoft Software License Terms,false,false

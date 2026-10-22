@@ -1,0 +1,87 @@
+{
+  "project": "ACRUX",
+  "pass": "title/environment production final",
+  "status": "PRODUCTION FINAL",
+  "runtime": [
+    {
+      "path": "runtime/ACRUX_TITLE_BG_320x180_indexed.png",
+      "role": "title background production PNG"
+    },
+    {
+      "path": "runtime/ACRUX_TITLE_BG_320x180.raw",
+      "bytes": 57600,
+      "format": "row-major, top-to-bottom, left-to-right, 1 byte/index"
+    },
+    {
+      "path": "runtime/ACRUX_TITLE_BG_palette24.rgb",
+      "bytes": 72,
+      "entries": 24,
+      "format": "RGB triplets"
+    },
+    {
+      "path": "runtime/ACRUX_TITLE_LOGO_192x64_world32.png",
+      "role": "transparent title logo",
+      "placement": [
+        64,
+        18
+      ]
+    },
+    {
+      "path": "runtime/ACRUX_TITLE_LOGO_192x64.5bpp",
+      "bytes": 7680,
+      "format": "5bpp row-major MSB-first"
+    },
+    {
+      "path": "runtime/ACRUX_LANDMARKS_3x64x64_world32.png",
+      "role": "3 regional landmarks"
+    },
+    {
+      "path": "runtime/ACRUX_LANDMARKS_3x64x64.5bpp",
+      "bytes": 7680,
+      "format": "5bpp row-major MSB-first"
+    }
+  ],
+  "review_only": [
+    "review/TITLE_BG_source_vs_pixel.png",
+    "review/TITLE_BG_2x_NN.png",
+    "review/TITLE_BG_4x_NN.png",
+    "review/TITLE_LOGO_source_vs_production.png",
+    "review/TITLE_LOGO_8x_NN.png",
+    "review/TITLE_SCREEN_logo_composite_1x.png",
+    "review/TITLE_SCREEN_logo_composite_4x_NN.png",
+    "review/LANDMARKS_source_vs_production.png",
+    "review/LANDMARKS_8x_NN.png",
+    "review/LANDMARKS_gameplay_1x.png"
+  ],
+  "runtime_cost": {
+    "title_background_raw": 57600,
+    "title_background_palette": 72,
+    "title_logo_5bpp": 7680,
+    "landmarks_5bpp": 7680,
+    "total": 73032,
+    "total_kib": 71.32
+  },
+  "sha256": {
+    "docs/QA.json": "979cfc6331c76dbf4ec8da4b26ab35a53f331f9f975718c5a3fb25c81d74cc50",
+    "docs/QA.txt": "a3a37a83d111e383829443e036c9ac814db28f59192fafb811119d176a9388b2",
+    "docs/README.txt": "bc205e00bb1aa4c012224b6940136805b0e2c4c30936129914c67f36e2d6b55f",
+    "docs/runtime_byte_cost.txt": "2228561f01f259a172cb0b078656a4536b41f05955bb806202d2705787d7fe8a",
+    "review/LANDMARKS_8x_NN.png": "53f3c28e6774a6d90ade880886b2fe0813802a6907091f0166017d1cd532973e",
+    "review/LANDMARKS_gameplay_1x.png": "4933b7017509e46eb7b51f3eaa28728f66e217f952bba35bcac8b46db8d3f4ad",
+    "review/LANDMARKS_source_vs_production.png": "4ba4820c509e6ae0b34b9a5a1a171cec9e991e6623199b4877c97b5cc08fe1a3",
+    "review/TITLE_BG_2x_NN.png": "e85c11afc6a6cd4c3fa8c82c6e4eee7666570c4865f4168f0328cae698a8db7d",
+    "review/TITLE_BG_4x_NN.png": "d4c2dfbea54450913bb06ef40ef02120da41a0c25191e83726a39d4e2f70c6ce",
+    "review/TITLE_BG_source_vs_pixel.png": "cd25e86a46d0d47dab6caa8bb962bd7615b9615ec7b22bb0471f4794c8753cca",
+    "review/TITLE_LOGO_8x_NN.png": "ec2cf6be22563f1bc76cefe7d7922501937b6dffecd676fdf3f7b06576bd9c5d",
+    "review/TITLE_LOGO_source_vs_production.png": "e6313f2cab206da294f4f0f8a2335af83e85b536da3242eb0a1b2fd9f75c4521",
+    "review/TITLE_SCREEN_logo_composite_1x.png": "45dc976a6296263b11550c77bd5c5954fc6f1edf27c2070c5596969c57720190",
+    "review/TITLE_SCREEN_logo_composite_4x_NN.png": "7f6d1e8aa81fd0545b0e9670ed2e6f0c80bb242b49632eb1a69127bd0c0f9217",
+    "runtime/ACRUX_LANDMARKS_3x64x64.5bpp": "bdd7217ff00c80fee3c09a9b7564d6868b0478b4b75244f275b27a804ced063f",
+    "runtime/ACRUX_LANDMARKS_3x64x64_world32.png": "d8d6d71de80617b7f08d578df8f0ef5cca7d5206a1ab0207cf6db20f19ff63c8",
+    "runtime/ACRUX_TITLE_BG_320x180.raw": "88d38a9477213156f897c07d36611b04b7ed400da81c704a87cb76f38b99984e",
+    "runtime/ACRUX_TITLE_BG_320x180_indexed.png": "7a15e4476715d0b1669f9ddddda0d786b1646b9997e585cead0aed8c47f60b3e",
+    "runtime/ACRUX_TITLE_BG_palette24.rgb": "f5e7651b57906d5bd30554ce29cab332e562a97ec1846a53762108402f438ffe",
+    "runtime/ACRUX_TITLE_LOGO_192x64.5bpp": "35799f0c91f082891936d241baa902447c083feaad994fcf04a51709ef6ed97e",
+    "runtime/ACRUX_TITLE_LOGO_192x64_world32.png": "65c89b61a8a970dd3e9d069a4527d6211e43c7b5feb2bb2d7bf481cdde438e5d"
+  }
+}

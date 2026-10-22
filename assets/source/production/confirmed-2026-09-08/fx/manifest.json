@@ -1,0 +1,169 @@
+{
+  "project": "ACRUX",
+  "family": "compact interaction/electric FX",
+  "version": "v2",
+  "format": {
+    "palette_slots": 32,
+    "bits_per_pixel": 5,
+    "packing": "row-major, MSB-first",
+    "alpha": "binary; raw index 0 transparent"
+  },
+  "palette_lock": {
+    "policy": "No new palette file introduced. Production depends on existing Player32/World32 project palettes.",
+    "indices_used_union": [
+      0,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "rgb_source_for_used_indices": "documented ACRUX shared subset 0-15; no indices 16-31 used",
+    "known_rgbs": {
+      "0": "#000000",
+      "1": "#070B18",
+      "2": "#11182D",
+      "3": "#1D2742",
+      "4": "#334665",
+      "5": "#416C6A",
+      "6": "#747C9A",
+      "7": "#A2A7BF",
+      "8": "#D7D9EB",
+      "9": "#F3F2FA",
+      "10": "#9B7067",
+      "11": "#D8A692",
+      "12": "#774D45",
+      "13": "#E6A34A",
+      "14": "#238B9A",
+      "15": "#53E6EA"
+    },
+    "integration_note": "Charge remains cyan. Boar-related effects intentionally remapped to approved warm warning indices 10,11,12,13 while staying inside the documented common palette subset."
+  },
+  "sequences": [
+    {
+      "id": "FX_Charge_Manual",
+      "png": "FX_Charge_Manual.png",
+      "runtime": "runtime/FX_Charge_Manual.5bpp",
+      "cell_w": 24,
+      "cell_h": 24,
+      "frames": 3,
+      "anchor": [
+        2,
+        22
+      ],
+      "palette": "Player32 existing palette; uses documented common indices only",
+      "durations_ms": [
+        80,
+        110,
+        160
+      ],
+      "frame_bytes": 360,
+      "runtime_bytes": 1080,
+      "placement": {
+        "right_facing": "align overlay anchor (2,22) to player anchor (32,58)",
+        "left_facing": "horizontal flip cell; flipped anchor x = 21; align to same player world anchor"
+      },
+      "used_indices": [
+        0,
+        9,
+        14,
+        15
+      ],
+      "qa": {
+        "partial_alpha_pixels": 0,
+        "outside_documented_common_palette_pixels": 0,
+        "transparent_nonzero_rgb_pixels": 0,
+        "nearest_8x_roundtrip_mismatch_pixels": 0
+      }
+    },
+    {
+      "id": "FX_Boar_PathImpact",
+      "png": "FX_Boar_PathImpact.png",
+      "runtime": "runtime/FX_Boar_PathImpact.5bpp",
+      "cell_w": 24,
+      "cell_h": 24,
+      "frames": 3,
+      "anchor": [
+        12,
+        12
+      ],
+      "palette": "World32 existing palette; warm warning remap using documented common indices only",
+      "durations_ms": [
+        55,
+        70,
+        95
+      ],
+      "frame_bytes": 360,
+      "runtime_bytes": 1080,
+      "placement": {
+        "placement": "align anchor (12,12) to boar↔stabilized-PATH collision point",
+        "mirror": "horizontal flip for opposite charge direction; PATH sprite is never modified"
+      },
+      "used_indices": [
+        0,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "qa": {
+        "partial_alpha_pixels": 0,
+        "outside_documented_common_palette_pixels": 0,
+        "transparent_nonzero_rgb_pixels": 0,
+        "nearest_8x_roundtrip_mismatch_pixels": 0
+      }
+    },
+    {
+      "id": "FX_Boar_StunLoop",
+      "png": "FX_Boar_StunLoop.png",
+      "runtime": "runtime/FX_Boar_StunLoop.5bpp",
+      "cell_w": 40,
+      "cell_h": 24,
+      "frames": 2,
+      "anchor": [
+        20,
+        18
+      ],
+      "palette": "World32/creature-compatible existing palette subset; warm warning remap",
+      "durations_ms": [
+        700,
+        700
+      ],
+      "frame_bytes": 600,
+      "runtime_bytes": 1200,
+      "placement": {
+        "placement": "align overlay anchor (20,18) to BOAR world anchor (24,24)",
+        "loop": "2 frames × 700ms = 1.4s cycle; repeat 5 cycles ≈ 7.0s"
+      },
+      "used_indices": [
+        0,
+        9,
+        10,
+        12,
+        13
+      ],
+      "qa": {
+        "partial_alpha_pixels": 0,
+        "outside_documented_common_palette_pixels": 0,
+        "transparent_nonzero_rgb_pixels": 0,
+        "nearest_8x_roundtrip_mismatch_pixels": 0
+      }
+    }
+  ],
+  "blink": {
+    "replacement_created": false,
+    "runtime_bytes_added": 0,
+    "reason": "Existing ACRUX Blink is already runtime/procedural and the requested identity is better achieved by tuning the current ring rather than storing frames.",
+    "polish_contract": [
+      "tiny central white-cyan point",
+      "single broken expanding circular wave",
+      "brief silhouette reveal",
+      "sparse residual pixels",
+      "no stored replacement frames"
+    ]
+  },
+  "total_added_runtime_bytes": 3360
+}
